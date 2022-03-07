@@ -1,0 +1,21 @@
+public class CalculadoraObjeto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Calculadora calc = new Calculadora();
+		
+//		calc.setValor1(3);
+//		calc.setValor2(5);
+//		
+//		calc.somar();
+//		calc.subtrair();
+//		calc.multiplicar();
+//		calc.dividir();
+		
+		calc.solicitarValor();
+		calc.solicitarOperacao();
+		
+	
+
+	}

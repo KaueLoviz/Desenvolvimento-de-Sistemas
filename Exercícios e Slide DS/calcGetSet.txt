@@ -1,0 +1,83 @@
+public class Calculadora {
+	
+	private double valor1;
+	private double valor2;
+	private double resultado;
+	private String operacao;
+	
+	public String getOperacao() {
+		return operacao;
+	}
+	public void setOperacao(String operacao) {
+		this.operacao = operacao;
+	}
+	public double getValor1() {
+		return valor1;
+	}
+	public void setValor1(double valor1) {
+		this.valor1 = valor1;
+	}
+	public double getValor2() {
+		return valor2;
+	}
+	public void setValor2(double valor2) {
+		this.valor2 = valor2;
+	}
+	public double getResultado() {
+		return resultado;
+	}
+	public void setResultado(double resultado) {
+		this.resultado = resultado;
+	}
+	
+	public void solicitarValor() {
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro valor");
+		valor1 = ler.nextDouble();
+		
+		System.out.println("Digite o segundo valor");
+		valor2 = ler.nextDouble();
+		
+	}
+	public void solicitarOperacao() {
+		
+		Scanner ver = new Scanner(System.in);
+		
+		System.out.println("Digite a operação:");
+		operacao = ver.nextLine();
+		
+		if(operacao.equals("+")) {
+			this.somar();
+		}else if(operacao.equals("-")) {
+			this.subtrair();	
+		}else if(operacao.equals("x")) {
+			this.multiplicar();
+		}else if(operacao.equals("/")) {
+			this.dividir();
+		}
+		
+	}
+	
+	public void somar() {
+		resultado = valor1+valor2;
+		System.out.println("o valor da soma é: "+resultado);
+	}
+	public void subtrair() {
+		resultado = valor1-valor2;
+		System.out.println("o valor da subtração é: "+resultado);
+	}
+	public void multiplicar() {
+		resultado = valor1*valor2;
+		System.out.println("o valor da multiplicação é: "+resultado);
+	}
+	public void dividir() {
+		resultado = valor1/valor2;
+		System.out.println("o valor da divisão é: "+resultado);
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,20 @@
+public class Crianca {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pessoa crianca = new Pessoa();
+		
+		crianca.nome="Renata";
+		crianca.Idade= 12;
+		crianca.Altura= 1.56f;
+		crianca.fala = true;
+		
+		System.out.println("Meu nome é: "+crianca.nome);
+		System.out.println("Minha idade é: "+crianca.Idade+" anos");
+		System.out.println("Minha altura atual é: "+crianca.Altura);
+		System.out.println("E eu estou falando "+crianca.fala);
+
+	}
+
+}
